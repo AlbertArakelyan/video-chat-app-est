@@ -6,7 +6,7 @@ const SocketContext = createContext();
 
 const useSocket = () => useContext(SocketContext);
 
-const socket = io('http://localhost:5000');
+const socket = io('https://video-chat-app-est.herokuapp.com/');
 
 const ContextProvider = ({ children }) => {
   const [stream, setStream] = useState(null);
